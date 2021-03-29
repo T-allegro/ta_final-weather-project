@@ -9,7 +9,8 @@ h1 {
 }
 h2 {
   color: #aaaaaa;
-  font-size: 20px;
+  font-size: 30px;
+  padding-bottom: 20px;
 }
 h3 {
   color: #383e56;
@@ -37,6 +38,7 @@ li {
 }
 .weather-forecast {
   text-align: center;
+  padding-top: 20px;
 }
 .weather-forecast-temperature {
   color: #aaaaaa;
@@ -48,12 +50,14 @@ li {
   height: 100px;
 }
 #temperature {
-  font-size: 50px;
+  font-size: 70px;
   color: #383e56;
   text-align: center;
 }
 .units {
   text-align: center;
+  font-size: 30px;
+  color: #383e56;
 }
 .min-max-temperature {
   font-size: 15px;
