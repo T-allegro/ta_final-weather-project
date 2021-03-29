@@ -45,9 +45,10 @@ li {
   font-size: 12px;
 }
 #icon {
-  margin-right: 5px;
-  width: 100px;
-  height: 100px;
+  margin-left: 0px;
+}
+#description {
+  text-align: left;
 }
 #temperature {
   font-size: 70px;
