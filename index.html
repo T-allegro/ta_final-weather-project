@@ -15,98 +15,125 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="city">Matosinhos</h1>
-      <h2 id="date">Sunday, 28 Mar 14:42</h2>
-      <div class="row">
-        <div class="col-4">
-          <ul>
-            <li id="icon">
-              <img
+      <div class="weather-app-wrapper">
+        <form id="search-form" class="mb-3">
+							<div class="row">
+								<div class="col-4">
+									<input
+										type="search"
+										placeholder="City.."
+										class="form-control"
+										id="city-input"
+										autocomplete="off"
+									/>
+								</div>
+								<div class="col-1">
+									<input
+										type="submit"
+										value="Search"
+										class="btn btn-primary"
+									/>
+								</div>
+								<div class="col-1">
+										<button
+											type="submit"
+											class="btn btn-primary">Current City</button>
+									</div>
+							</div>
+						</form>
+        <h1 id="city">Matosinhos</h1>
+        <h2 id="date">Sunday, 28 Mar 14:42</h2>
+        <div class="row">
+          <div class="col-4">
+            <ul>
+              <li id="icon">
+                <img
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Cloudy"
-              />
-            </li>
-            <li id="description">Cloudy</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li>
-              <strong id="temperature">12</strong
-              ><span class="units">ºC|ºF</span>
-            </li>
-            <li class="minmax">10º|15º</li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <ul>
-            <li>Feels like: <span id="realfeel">10</span>º</li>
-            <li>Wind: <span id="wind">18</span> km/h</li>
-            <li>Humidity: <span id="humidity">82</span>%</li>
-            <li>Precipitation: <span id="precipitation">10</span>%</li>
-          </ul>
-        </div>
-        <div class="row weather-forecast">
-					<div class="col-2">
-						<h3>
-							Monday
-						</h3>
-						<img
+                />
+              </li>
+              <li id="description">Cloudy</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                <strong id="temperature">12</strong
+                ><span class="units">ºC|ºF</span>
+              </li>
+              <li class="min-max-temperature">10º|15º</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>Feels like: <span id="realfeel">10</span>º</li>
+              <li>Wind: <span id="wind">18</span> km/h</li>
+              <li>Humidity: <span id="humidity">82</span>%</li>
+              <li>Precipitation: <span id="precipitation">10</span>%</li>
+            </ul>
+          </div>
+         <div class="row weather-forecast">
+					  <div class="col-2">
+						  <h3>
+							  Monday
+						  </h3>
+						  <img
 							src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
 							alt=""
-						/>
-						<div class="weather-forecast-temperature">
-						17º|22º
-						</div>
-					</div>
-					<div class="col-2">
-						<h3>
+						  />
+						  <div class="weather-forecast-temperature">
+						  17º|22º
+						  </div>
+					  </div>
+					  <div class="col-2">
+						  <h3>
 							Tuesday
-						</h3>
-						<img
+						  </h3>
+						  <img
 							src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
 							alt=""
-						/>
-						<div class="weather-forecast-temperature">
-						17º|22º
-						</div>
-					</div>
-					<div class="col-2">
-						<h3>
+						  />
+						  <div class="weather-forecast-temperature">
+						  17º|22º
+						  </div>
+					  </div>
+					  <div class="col-2">
+						  <h3>
 							Wednesday
-						</h3>
-						<img
+						  </h3>
+						  <img
 							src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
 							alt=""
-						/>
-						<div class="weather-forecast-temperature">
-						17º|22º
-						</div>
-					</div>
-					<div class="col-2">
-						<h3>
+						  />
+						  <div class="weather-forecast-temperature">
+						  17º|22º
+						  </div>
+					  </div>
+					  <div class="col-2">
+						  <h3>
 							Thursday
-						</h3>
-						<img
+						  </h3>
+						  <img
 							src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
 							alt=""
-						/>
-						<div class="weather-forecast-temperature">
-						17º|22º
-						</div>
-					</div>
-					<div class="col-2">
-						<h3>
+						  />
+						  <div class="weather-forecast-temperature">
+						  17º|22º
+						  </div>
+					  </div>
+					  <div class="col-2">
+						  <h3>
 							Friday
-						</h3>
-						<img
+						  </h3>
+						  <img
 							src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
 							alt=""
-						/>
-						<div class="weather-forecast-temperature">
-						17º|22º
-						</div>
-					</div>
+						  />
+						  <div class="weather-forecast-temperature">
+						  17º|22º
+						  </div>
+					  </div>
+        </div>
       </div>
     </div>
     <script>
