@@ -49,6 +49,7 @@ li {
 }
 #description {
   text-align: left;
+  color: #383e56;
 }
 #temperature {
   font-size: 70px;
