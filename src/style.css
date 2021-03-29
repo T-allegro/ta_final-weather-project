@@ -26,3 +26,24 @@ h2 {
   color: #aaaaaa;
   font-size: 20px;
 }
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#icon {
+  margin-right: 5px;
+  width: 100px;
+  height: 100px;
+}
+#temperature {
+  font-size: 80px;
+  color: #383e56;
+  text-align: center;
+}
+#description,
+.min-max-temperature {
+  font-size: 20px;
+  color: #aaaaaa;
+  text-align: center;
+}
