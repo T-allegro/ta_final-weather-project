@@ -1,0 +1,28 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.weather-app-wrapper {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+}
+h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: #383e56;
+  padding-top: 30px;
+}
+h2 {
+  color: #aaaaaa;
+  font-size: 20px;
+}
