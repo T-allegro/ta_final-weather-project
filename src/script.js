@@ -39,10 +39,22 @@ function displayTemperature(response) {
     iconElement.setAttribute ("alt", response.data.weather[0].description);
 }
 
+function search (city) {
+    let apiKey = "f2307cbce532cfdeb3168c7d625e3421";
+    let units="metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
-let apiKey = "f2307cbce532cfdeb3168c7d625e3421";
-let city="Matosinhos";
-let units="metric";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function resolveSubmit(event) {
+    event.preventDefault();
+    let cityInputElement=document.querySelector("#city-input");
+    search(cityInputElement.value.toUpperCase());
+}
+
+search("Matosinhos");
+
+
+let form=document.querySelector("#search-form");
+form.addEventListener ("submit", resolveSubmit);
