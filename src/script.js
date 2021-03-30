@@ -5,6 +5,12 @@ function displayTemperature(response) {
     cityElement.innerHTML=response.data.name.toUpperCase();
     let descriptionElement=document.querySelector("#description");
     descriptionElement.innerHTML=response.data.weather[0].description;
+    let feelsLikeElement=document.querySelector("#realfeel");
+    feelsLikeElement.innerHTML=Math.round(response.data.main.feels_like);
+    let windElement=document.querySelector("#wind");
+    windElement.innerHTML=Math.round(response.data.wind.speed);
+    let humidityElement=document.querySelector("#humidity");
+    humidityElement.innerHTML=Math.round(response.data.main.humidity);
 }
 
 
