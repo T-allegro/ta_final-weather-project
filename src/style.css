@@ -16,6 +16,9 @@ h3 {
   color: #383e56;
   font-size: 15px;
 }
+ul {
+  padding: 0 32px;
+}
 li {
   list-style: none;
   margin: 0;
@@ -36,6 +39,9 @@ li {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
+.weather-icon {
+  width: 120px;
+}
 .weather-forecast {
   text-align: center;
   padding-top: 20px;
@@ -43,18 +49,6 @@ li {
 .weather-forecast-temperature {
   color: #aaaaaa;
   font-size: 12px;
-}
-#icon {
-  margin-left: 0px;
-}
-#description {
-  text-align: left;
-  color: #383e56;
-}
-#temperature {
-  font-size: 70px;
-  color: #383e56;
-  text-align: center;
 }
 .units {
   text-align: center;
@@ -64,4 +58,15 @@ li {
 .specifications {
   text-align: right;
   color: #383e56;
+  text-align: right;
+}
+#description {
+  color: #383e56;
+  padding: 0 32px;
+}
+#temperature {
+  font-size: 70px;
+  color: #383e56;
+  text-align: center;
+  line-height: 150px;
 }
