@@ -77,3 +77,9 @@ li {
   text-decoration: none;
   color: #383e56;
 }
+
+#github-url {
+  text-decoration: none;
+  color: #94b5c0;
+  margin: 0 0 0 250px;
+}
