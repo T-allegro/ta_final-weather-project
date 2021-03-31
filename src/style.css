@@ -71,3 +71,9 @@ li {
   text-align: center;
   line-height: 150px;
 }
+
+#celcius,
+#fahrenheit {
+  text-decoration: none;
+  color: #383e56;
+}
