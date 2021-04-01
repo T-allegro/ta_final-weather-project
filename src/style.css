@@ -4,16 +4,17 @@ body {
 h1 {
   font-size: 60px;
   font-weight: bold;
-  color: #383e56;
+  color: #222831;
   padding-top: 20px;
 }
 h2 {
-  color: #aaaaaa;
+  color: #db6400;
   font-size: 30px;
+  font-weight: bold;
   padding-bottom: 20px;
 }
 h3 {
-  color: #383e56;
+  color: #222831;
   font-size: 15px;
 }
 ul {
@@ -28,12 +29,7 @@ li {
 .weather-app-wrapper {
   max-width: 800px;
   margin: 30px auto;
-  background-image: linear-gradient(
-    to top,
-    #f3e7e9 0%,
-    #e3eeff 99%,
-    #e3eeff 100%
-  );
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
 }
 .weather-app {
   padding: 30px;
@@ -48,26 +44,26 @@ li {
   padding-top: 20px;
 }
 .weather-forecast-temperature {
-  color: #aaaaaa;
+  color: #30475e;
   font-size: 12px;
 }
 .units {
   text-align: center;
   font-size: 30px;
-  color: #383e56;
+  color: #222831;
 }
 .specifications {
   text-align: right;
-  color: #383e56;
+  color: #222831;
   line-height: 40px;
 }
 #description {
-  color: #383e56;
+  color: #222831;
   padding: 0 32px;
 }
 #temperature {
   font-size: 70px;
-  color: #383e56;
+  color: #222831;
   text-align: center;
   line-height: 150px;
 }
@@ -75,11 +71,11 @@ li {
 #celcius,
 #fahrenheit {
   text-decoration: none;
-  color: #383e56;
+  color: #222831;
 }
 
 #github-url {
   text-decoration: none;
-  color: #94b5c0;
+  color: #30475e;
   margin: 0 0 0 250px;
 }
