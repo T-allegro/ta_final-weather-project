@@ -120,7 +120,6 @@ function displayFahrenheitTemp(event) {
     let temperatureElement = document.querySelector("#temperature");
     let fahrenheitTemperature = (celciusTemperature*9)/5+32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-
 }
 
 function displayCelciusTemp(event) {
