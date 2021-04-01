@@ -18,6 +18,31 @@ function formatDate(timestamp) {
 
 }
 
+function displayForecast() {
+    let forecastElement=document.querySelector("#forecast");
+    let forecastHTML = `<div class= "row">`;
+    let days =["Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
+    days.forEach(function(day) {
+        forecastHTML= forecastHTML + `
+			<div class="col">
+				<h3 id="forecast-date">
+					 ${day}
+				</h3>
+				<img
+					src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+					alt=""
+				/>
+				<div class="weather-forecast-temperature">
+					<span id="forecast-temperature-min">17º</span>|<span id="forecast-temperature-mmax">22º</span>
+				</div>
+			</div>  
+    `;
+    })
+    forecastHTML=forecastHTML + `</div>`;  
+    forecastElement.innerHTML=forecastHTML;      	  
+}
+
+
 function displayTemperature(response) {
     let temperatureElement=document.querySelector("#temperature");
     let cityElement=document.querySelector("#city");
@@ -82,3 +107,4 @@ let celciusLink=document.querySelector("#celcius");
 celciusLink.addEventListener ("click", displayCelciusTemp);
 
 search("Matosinhos");
+displayForecast();
