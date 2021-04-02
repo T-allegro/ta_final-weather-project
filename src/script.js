@@ -72,6 +72,7 @@ function displayTemperature(response) {
     let iconElement=document.querySelector("#icon");
 
     celciusTemperature = response.data.main.temp;
+    feelsTemperature = response.data.main.feels_like;
 
     temperatureElement.innerHTML=Math.round(response.data.main.temp);
     cityElement.innerHTML=response.data.name.toUpperCase();
@@ -118,17 +119,23 @@ function showCoords(event) {
 function displayFahrenheitTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
+    let feelsLikeElement = document.querySelector("#realfeel");
     let fahrenheitTemperature = (celciusTemperature*9)/5+32;
+    let fahrenheitFeelTemperature =(feelsTemperature*9)/5+32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+    feelsLikeElement.innerHTML = Math.round(fahrenheitFeelTemperature);
 }
 
 function displayCelciusTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
+    let feelsLikeElement = document.querySelector("#realfeel");
     temperatureElement.innerHTML=Math.round(celciusTemperature);
+    feelsLikeElement.innerHTML=Math.round(feelsTemperature);
 }
 
 let celciusTemperature = null;
+let feelsTemperature = null;
 
 let form=document.querySelector("#search-form");
 form.addEventListener ("submit", resolveSubmit);
