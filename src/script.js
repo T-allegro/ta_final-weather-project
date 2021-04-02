@@ -44,12 +44,12 @@ function displayForecast(response) {
 					alt=""
 				/>
 				<div class="weather-forecast-temperature">
-					<span id="forecast-temperature-min">${Math.round(forecastDay.temp.min)}º</span>|<span id="forecast-temperature-max">${Math.round(forecastDay.temp.max)}º</span>
+					<span id="forecast-temperature-min">${Math.round(forecastDay.temp.min)}</span>º|<span id="forecast-temperature-max">${Math.round(forecastDay.temp.max)}</span>º
 				</div>
 			</div>  
     `;}
         forecastMinTemp = forecastDay.temp.min;
-        forecastMaxTemp = forecastDay.temp.min;
+        forecastMaxTemp = forecastDay.temp.max;
     })
     forecastHTML=forecastHTML + `</div>`;  
     forecastElement.innerHTML=forecastHTML;      	  
