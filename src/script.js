@@ -48,6 +48,8 @@ function displayForecast(response) {
 				</div>
 			</div>  
     `;}
+        forecastMinTemp = forecastDay.temp.min;
+        forecastMaxTemp = forecastDay.temp.min;
     })
     forecastHTML=forecastHTML + `</div>`;  
     forecastElement.innerHTML=forecastHTML;      	  
@@ -120,22 +122,34 @@ function displayFahrenheitTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     let feelsLikeElement = document.querySelector("#realfeel");
+    let forecastMinElement = document.querySelector("#forecast-temperature-min");
+    let forecastMaxElement = document.querySelector("#forecast-temperature-max");
     let fahrenheitTemperature = (celciusTemperature*9)/5+32;
     let fahrenheitFeelTemperature =(feelsTemperature*9)/5+32;
+    let forecastMinFahrenheit = (forecastMinTemp*9)/5+32;
+    let forecastMaxFahrenheit = (forecastMaxTemp*9)/5+32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
     feelsLikeElement.innerHTML = Math.round(fahrenheitFeelTemperature);
+    forecastMinElement.innerHTML = Math.round(forecastMinFahrenheit);
+    forecastMaxElement.innerHTML = Math.round(forecastMaxFahrenheit);
 }
 
 function displayCelciusTemp(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     let feelsLikeElement = document.querySelector("#realfeel");
+    let forecastMinElement = document.querySelector("#forecast-temperature-min");
+    let forecastMaxElement = document.querySelector("#forecast-temperature-max");
     temperatureElement.innerHTML=Math.round(celciusTemperature);
     feelsLikeElement.innerHTML=Math.round(feelsTemperature);
+    forecastMinElement.innerHTML = Math.round(forecastMinTemp);
+    forecastMaxElement.innerHTML = Math.round(forecastMaxTemp);
 }
 
 let celciusTemperature = null;
 let feelsTemperature = null;
+let forecastMinTemp = null;
+let forecastMaxTemp = null;
 
 let form=document.querySelector("#search-form");
 form.addEventListener ("submit", resolveSubmit);
